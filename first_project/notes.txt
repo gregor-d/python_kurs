@@ -1,0 +1,39 @@
+# spyderstuff 
+* help
+str + i
+
+# python stuff
+* listennamen sind referenz auf objekt
+x = [3,4,6]
+y = x
+y[1] = "a"
+print(x) # [3, "a", 6]
+* methoden liefern kein objekt sonder modifizieren nur
+x = [2,4,1]
+y = x.sort()
+print(y) # None
+print(x) # [1,2,4]
+
+# real copy not only copy binding with 
+import copy
+mycopy = copy.deepcopy(mylist) # for compound lists
+cp = copy.copy(mylist) # normal shallow list
+
+# klassen
+Der erste Parameter in Funktionen muss immer self sein. Darüber erhält die Methode eine Referenz auf das Objekt
+pass als Platzhalter für Funktionen
+
+#subsetting/slicing M[st:en:sc,st:en:sc]
+kein startindex = null, kein endindex = max index, letzer wert ist schrittweite wie bei arrange
+nur doppelpunkt :  also alle werte
+negativer index liefert ergebnis von hinten, array umsortieren mit Z[::-1], letzer index Z[-1]
+Aber immer keine deep copys sondern nur Views, auch bei einfacherer Indexierung C=B[0:2,0:2]
+Copy mit C=B[0:2,0:2].copy()
+Werden Arrays für slicing benutzt wird eine deep copy gemacht
+a=[1,1];b=[0,1];d=c[a,b];array([3,1])
+Durch Nutzung des einfachen Slicings entstehen immer zunächst Views. Werden als
+Indexmenge jedoch Arrays verwendet, entstehen tiefe Kopien bzw. Deep Copys.
+
+# qualität
+Fehlerquadrate um größere Abweichungen stärker zu gewichten als kleinere
+Overfitting vor allem da Relevant wo viele Freiheitsgerade (willkürlich) vergeben werden können. Bei linear regression nicht der Fall, da dort nur wenige DegreeOfFreedom benutzt werden
