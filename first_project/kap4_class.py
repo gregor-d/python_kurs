@@ -54,16 +54,3 @@ class bayes():
 
     def testindex(self):
         return self.test
-
-# for k in range(self.xtrain.shape[1]):
-#                 # wenn merkmal nicht existiert entfernen aus vektor
-#                 nan_test = np.logical_not(np.isnan(self.xtrain[:,k]))
-#                 xtrain = self.xtrain[nan_test,k]
-#                 ytrain = self.ytrain[nan_test]                                
-#                 # summe an fällen für variable k, wenn k = ja und y = ja
-#                 pix[0, k, 0] = np.sum(np.logical_and(xtrain, ytrain))
-#                 # summe an fällen für variable k, wenn k = ja und y = nein
-#                 pix[0, k, 1] = np.sum(np.logical_and(np.logical_not(xtrain), ytrain))
-#                 # summe an fällen für variable k, wenn k = nein und y ja
-#                 pix[1, k, 0] = np.sum(np.logical_and(xtrain,np.logical_not(ytrain)))
-#                 pix[1, k, 1] = np.sum(np.logical_not(np.logical_or(xtrain,ytrain)))
