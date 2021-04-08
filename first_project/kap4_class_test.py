@@ -1,8 +1,6 @@
 import kap4_class
 import numpy as np
 
-
-
 data = np.loadtxt("diagnosis.csv", delimiter=",")
 
 
