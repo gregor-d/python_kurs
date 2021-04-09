@@ -37,3 +37,6 @@ Indexmenge jedoch Arrays verwendet, entstehen tiefe Kopien bzw. Deep Copys.
 # qualität
 Fehlerquadrate um größere Abweichungen stärker zu gewichten als kleinere
 Overfitting vor allem da Relevant wo viele Freiheitsgerade (willkürlich) vergeben werden können. Bei linear regression nicht der Fall, da dort nur wenige DegreeOfFreedom benutzt werden
+
+# regression
+Eigentlich ist das Least-Squares-Verfahren sehr robust, was die Werte in der Matrix angeht, jedoch ist es immer hilfreich, diese wie in den Zeilen 19 und 20 zu normieren. Dann kann man auch leichter ablesen, welches Merkmal einen wie großen Einfluss hat, was bei unterschiedlichen Normierungen so nicht möglich ist. -> Heißt große Zahl hat großen Einfluss
